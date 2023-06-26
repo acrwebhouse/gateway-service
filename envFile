@@ -1,5 +1,5 @@
-AUTH＿LOCATION=https://matchrentdev.com/auth-service
-USER＿LOCATION=https://matchrentdev.com/user-service
+AUTH_LOCATION=https://matchrentdev.com/auth-service
+USER_LOCATION=https://matchrentdev.com/user-service
 HOUSE_LOCATION=https://matchrentdev.com/house-service
 COLLECT_LOCATION=https://matchrentdev.com/collect-service
 COMPANY_LOCATION=https://matchrentdev.com/company-service
