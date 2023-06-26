@@ -1,7 +1,7 @@
-AUTH_LOCATION=https://matchrentdev.com/auth-service
-USER_LOCATION=https://matchrentdev.com/user-service
-HOUSE_LOCATION=https://matchrentdev.com/house-service
-COLLECT_LOCATION=https://matchrentdev.com/collect-service
-COMPANY_LOCATION=https://matchrentdev.com/company-service
+AUTH_LOCATION=http://35.234.42.100:3000
+USER_LOCATION=http://35.234.42.100:4000
+HOUSE_LOCATION=http://35.234.42.100:5000
+COLLECT_LOCATION=http://35.234.42.100:6000
+COMPANY_LOCATION=http://35.234.42.100:7000
 SWAGGER_IP=127.0.0.1
 SERVER_PORT=2000
