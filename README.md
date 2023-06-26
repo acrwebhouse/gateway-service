@@ -1,12 +1,12 @@
-# house-service
+# gateway-service
 
 build docker
-docker build . -t acrwebdev/house-service
+docker build . -t acrwebdev/gateway-service
 
 docker push
-docker push acrwebdev/house-service
+docker push acrwebdev/gateway-service
 
-docker pull acrwebdev/house-service:latest
+docker pull acrwebdev/gateway-service:latest
 
 run docker
-docker run -p 5000:5000 --env SERVER_IP=35.234.42.100 --env SERVER_PORT=5000 --env HOUSE_BASIC_LOCATION=http://10.140.0.2:14000 --env USER_BASIC_LOCATION=http://10.140.0.2:13000 --env SMTP_BASIC_LOCATION=http://10.140.0.2:16000 --env NOTIFICATION_BASIC_LOCATION=http://10.140.0.2:17000 --env RESERVE_HOUSE_BASIC_LOCATION=http://10.140.0.2:18000 --env JOB_BASIC_LOCATION=http://10.140.0.2:19000 --env EMPLOYEES_BASIC_LOCATION=http://10.140.0.2:21000 --env TRANSACTION_BASIC_LOCATION=http://10.140.0.2:22000 --env NAS_DIR=/usr/src/app/nas --env SWAGGER_IP=35.234.42.100 --env TZ=Asia/Taipei -v /home/acr_dev_webhouse/nas/house:/usr/src/app/nas --restart=always --name=house-service -d acrwebdev/house-service
+docker run -p 2000:2000 --env SERVER_IP=35.234.42.100 --env SERVER_PORT=2000 --env AUTH_LOCATION=http://10.140.0.2:3000 --env USER_LOCATION=http://10.140.0.2:4000 --env HOUSE_LOCATION=http://10.140.0.2:5000 --env COLLECT_LOCATION=http://10.140.0.2:6000 --env COMPANY_LOCATION=http://10.140.0.2:7000 --env WEB_LOCATION=http://10.140.0.2:8080 --env SWAGGER_IP=35.234.42.100 --env TZ=Asia/Taipei --restart=always --name=gateway-service -d acrwebdev/gateway-service
